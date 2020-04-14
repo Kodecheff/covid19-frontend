@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A Simplified Covid-19 Estimator">
+  <title>Covid-19 Estimator</title>
+  <!-- Google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <nav>
+    <h1>Covid-19 Estimator</h1>
+  </nav>
+  <section class="form-section">
+    <h2>Estimator form</h2>
+    <form id="estimator-form" action="/" method="post">
+
+      <label for="population-data">
+        <p>Populaiton data</p>
+        <input required name="population-data" type="number" data-population>
+      </label>
+
+      <label for="time-to-elapse">
+        <p>Time to elapse</p>
+        <input required name="time-to-elapse" type="number" data-time-to-elapse>
+      </label>
+
+      <label for="reported-cases">
+        <p>Reported cases</p>
+        <input required name="reported-cases" type="number" data-reported-cases>
+      </label>
+
+      <label for="total-hospital-beds">
+        <p>Total hospital beds</p>
+        <input required name="total-hospital-beds" type="number" data-total-hospital-beds>
+      </label>
+
+      <label for="period-type">
+        <p>Period Type</p>
+        <select data-period-type name="period-type" id="period-type">
+          <option value="days">days</option>
+          <option value="weeks">weeks</option>
+          <option value="months">months</option>
+        </select>
+      </label>
+
+      <div class="region-details">
+        <h4>Region details</h4>
+        <label for="region-name">
+          <p>Region name</p>
+          <select data-region-name name="region-name" id="region-name">
+            <option value="Africa">Africa</option>
+          </select>
+        </label>
+        <label for="average-daily-income-in-usd">
+          <p>Average daily income in USD</p>
+          <input step="0.001" required name="average-daily-income-in-usd" type="number"
+            data-average-daily-income-in-usd>
+        </label>
+        <label for="average-daily-income-population">
+          <p>Average daily income population</p>
+          <input step="0.001" required name="average-daily-income-population" type="number"
+            data-average-daily-income-population>
+        </label>
+        <label for="average-age">
+          <p>Average age</p>
+          <input step="0.001" required name="average-age" type="number" data-average-age>
+        </label>
+      </div>
+
+      <button data-go-estimate class="submitForm" type="submit">Submit</button>
+    </form>
+  </section>
+</body>
+
+</html>

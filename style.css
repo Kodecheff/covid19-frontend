@@ -1,0 +1,38 @@
+body{
+  margin: 0;
+  font-family: 'Yanone Kaffeesatz';
+}
+nav{
+  background-color: rgb(47, 0, 255);
+  padding: 15px;
+  color: azure;
+}
+.form-section{
+  margin: auto;
+  text-align: center;
+  padding: 15px;
+  background-color: rgb(86, 54, 228);
+  color: azure;
+}
+.form-section h2{
+  text-align: center;
+}
+input{
+  border: 1px solid azure;
+  padding: 5px;
+  border-radius: 5px;
+}
+.submitForm{
+  padding: 13px;
+  margin-top: 10px;
+  border: 1px solid azure;
+  border-radius: 8px;
+}
+.submitForm:hover{
+  background-color: rgb(86, 54, 228);
+  color: azure;
+}
+.region-details h4{
+  font-size: 20px;
+  font-weight: bold;
+}
